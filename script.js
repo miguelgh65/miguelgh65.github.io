@@ -19,10 +19,9 @@ function updateTime() {
   var currentTime = hr + ":" + _min + ":" + sec;
 
   // print time
+  document.getElementById("clock").innerHTML = currentTime;
   document.querySelector(".hms").innerHTML = currentTime;
   document.querySelector(".ampm").innerHTML = ampm;
-
-  // Add date & Month (javascript)
 
 };
 
