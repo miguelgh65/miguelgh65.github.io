@@ -2,31 +2,17 @@ function updateTime() {
   var dateInfo = new Date();
 
   // time
-  var hr,
+  var hr = dateInfo.getHours(),
     _min = (dateInfo.getMinutes() < 10) ? "0" + dateInfo.getMinutes() : dateInfo.getMinutes(),
     sec = (dateInfo.getSeconds() < 10) ? "0" + dateInfo.getSeconds() : dateInfo.getSeconds(),
     ampm = (dateInfo.getHours() >= 12) ? "PM" : "AM";
 
   // replace 0 with 12 at midnight, subtract 12 from hour if 13-23
-  if (dateInfo.getHours() == 0) {
+  if (hr == 0) {
     hr = 12;
-  } else if (dateInfo.getHours() > 12) {
-    hr = dateInfo.getHours() - 12;
-  } else {
-    hr = dateInfo.getHours();
+  } else if (hr > 12) {
+    hr = hr - 12;
   }
 
   var currentTime = hr + ":" + _min + ":" + sec;
 
-  // print time
-  document.getElementById("clock").innerHTML = currentTime;
-  document.querySelector(".hms").innerHTML = currentTime;
-  document.querySelector(".ampm").innerHTML = ampm;
-
-};
-
-// print time and date once, then update them every second
-updateTime();
-setInterval(function() {
-  updateTime()
-}, 1000);
