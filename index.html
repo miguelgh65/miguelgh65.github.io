@@ -33,63 +33,71 @@
         </section>
           <div class=”time”>
        
+    <style>
+        .time {
+            background: rgb(12, 12, 12);
+            color: #fff;
+            border: 1px solid black;
+            box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+            padding: 8px;
+            text-align: center;
+            width: 500px;
+            margin-top: 20px;
+        }
+
+        .hms {
+          font-size: 68pt;
+          font-weight: 200;
+        }
+
+        .ampm {
+          font-size: 22pt;
+        }
+
+        .date {
+          font-size: 15pt;
+        }
+    </style>
   </div>
        
 
 body {
-    font-family: “Work Sans”, sans-serif;
-    margin-left: 50px;
-    margin-top: 150px;
-    background: rgb(230, 230, 230);
-}
-.time {
-    background: rgb(12, 12, 12);
-    color: #fff;
-    border: 7px solid rgb(255, 252, 252);
-    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-    padding: 8px;
-    text-align: center;
-    width: 500px;
+  background-image: url('https://images.unsplash.com/photo-1690151711465-2bfe4e69f241?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5MDQ2MzgzMA&ixlib=rb-4.0.3&q=80&w=1080');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
 }
 
-        <section id="projects">
-            <h2>Projects</h2>
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
 
-        <div class="project">
-            <h3>Master's Thesis: Deep Learning Voice Mimic for Alexa</h3>
-            <p>A program developed with deep learning that empowers Alexa to mimic voices.</p>
-        </div>
+#main-content {
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-        <div class="project">
-            <h3>Bachelor's Project: Thermal Camera Person Detection</h3>
-            <p>An application that uses neural networks to detect individuals through a thermal camera and measures their temperature, triggering an alarm in febrile cases.</p>
-        </div>
+.project {
+  margin-bottom: 20px;
+}
 
-        <div class="project">
-            <h3>House Price Prediction</h3>
-            <p>Using the Idealista API, I developed a model that predicts house prices based on regressions and deep learning models, factoring in location and features.</p>
-        </div>
+a:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
 
-        <div class="project">
-            <h3>Politecnico de Milano (Polimi) Projects</h3>
-            <p>Classification of plant leaves with convolutional networks and time series prediction using transformers.</p>
-        </div>
-
-        <div class="project">
-            <h3>Confidential Project: ST Engineering Idirect</h3>
-            <p>Worked with Salesforce metrics and predicted data demand in a CS department using time series prediction models based on transformers.</p>
-        </div>
-
-        <div class="project">
-            <h3>Automated Weekly Service Report</h3>
-            <p>Utilized Pandas and Salesforce to automate the creation of a weekly service report based on hours dedicated to a Salesforce case.</p>
-        </div>
-
-        <div class="project">
-            <h3>Integration of Tacotron 2 and GPT-3</h3>
-            <p>Developed a paper analyzing the Tacotron 2 neural network and integrated it with GPT-3 to design a speaking machine.</p>
-        </div>
-
-    </section>
+.title {
+  font-size: 48px;
+  text-align: center;
+}
+</style>
 </body>
 </html>
