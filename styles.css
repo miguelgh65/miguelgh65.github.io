@@ -35,18 +35,3 @@ a:hover {
   font-size: 48px;
   text-align: center;
 }
-<span class=”hms”></span>
-<span class=”ampm”></span>
-    <br>
- <span class=”date”></span>
-
-.hms {
-    font-size: 68pt;
-    font-weight: 200;
-}
-.ampm {
-    font-size: 22pt;
-}
-.date {
-    font-size: 15pt;
-}
