@@ -1,0 +1,75 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+</head>
+
+<body>
+    <div id="language-switcher">
+        <a href="proyecto6.html"><span class="flag-icon flag-icon-es"></span> SP</a> |
+        <a href="eproyecto6.html"><span class="flag-icon flag-icon-gb"></span> EN</a>
+    </div>
+    <script src="script.js"></script>
+    <div id="clock"></div>
+
+    <div id="header">
+        <nav>
+            <!-- Wrapped in a nav tag for centering -->
+            <ul class="nav">
+                <li><a href="eindex.html">About Me</a></li>
+                <li><a href="#">Studies</a>
+                    <ul>
+                        <li><a href="https://www.etsit.upm.es/estudios/grado-en-ingenieria-de-tecnologias-y-servicios-de-telecomunicacion.html">Telecommunication Services and Technologies Engineering ETSIT UPM</a></li>
+                        <li><a href="https://www.etsit.upm.es/estudios/master-universitario-en-ingenieria-de-telecomunicacion.html">Master's Degree in Telecommunication Engineering UPM</a></li>
+                        <li><a href="https://www.polimi.it/en/international-prospective-students/laurea-magistrale-programmes-equivalent-to-master-of-science/programme-catalogue/computer-science-and-engineering">Master's in Computer Science at Politecnico di Milano (POLIMI), Erasmus</a></li>
+                        <li><a href="https://asociacionaepi.es/curso-profesional-de-python/">Professional Python Course, Spanish Association of Computer Programmers</a></li>
+                        <li><a href="https://www.nvidia.com/en-us/training/">Fundamentals of Deep Learning, Nvidia Deep Learning Institute</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Work Experience</a>
+                    <ul>
+                        <li><a href="eexperiencialaboral.html">Sortis, ST Engineering Idirect project</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Completed Projects</a>
+                    <ul>
+                        <li><a href="eproyecto1.html">Master's Thesis: Deep Learning Voice Mimic for Alexa</a></li>
+                        <li><a href="eproyecto2.html">Bachelor's Project: Thermal Camera Person Detection</a></li>
+                        <li><a href="eproyecto3.html">House Price Prediction</a></li>
+                        <li><a href="eproyecto4.html">Projects at Politecnico di Milano (Polimi)</a></li>
+                        <li><a href="eproyecto5.html">Project for ST Engineering Idirect</a></li>
+                        <li><a href="eproyecto6.html">Automated Weekly Service Report</a></li>
+                        <li><a href="eproyecto7.html">Integration of Tacotron 2 and GPT-3 for UPM</a></li>
+                    </ul>
+                </li>
+                <li><a href="etecnologiasconocidas.html">Known Technologies</a></li>
+                <li><a href="econtacto.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <section id="workExperience">
+        <div id="main-content">
+            <h2>Automated Weekly Service Report</h2>
+            <p>
+                For years, the process of reporting hours dedicated to each client was manually carried out using Excel sheets. This task, though routine, consumed a significant amount of time and had a margin of error due to the manual nature of the process.
+            </p>
+            <img src="excel.png" alt="Time Series Prediction" width="150" class="styled-img">
+    
+            <p>
+                To enhance and optimize this process, I decided to automate the generation of these reports. Using metrics provided by Salesforce, I developed a system that automatically assigns hours dedicated to each client. Although this might sound simple, the task wasn't straightforward. Salesforce provides data based on time per case, not per client, which added an extra layer of complexity to the challenge.
+            </p>
+            <p>
+                To overcome this difficulty, it was necessary to design and develop robust code that made intensive use of the Python <em>Pandas</em> library. This tool was pivotal for manipulating, transforming, and analyzing the data, allowing for the correct allocation of hours per client. This process has not only optimized an essential task but also reduced the margin of error, providing more accurate reports and freeing up valuable time that can be used for other critical tasks.
+            </p>
+        </div>
+    </section>
+
+    
+</body>
+
+</html>

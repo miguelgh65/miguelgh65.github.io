@@ -1,9 +1,11 @@
 body {
-  background-image: url('https://images.unsplash.com/photo-1690151711465-2bfe4e69f241?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5MDQ2MzgzMA&ixlib=rb-4.0.3&q=80&w=1080');
+  background-image: url('pxfuel.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 header {
@@ -47,3 +49,168 @@ h2 {
 .project h3 {
   font-size: 20px;
 }
+
+#clock {
+  font-size: 26px; 
+  font-weight: bold; 
+  color: white; 
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Estilos para el menú desplegable */
+#header {
+  width: 100%; 
+  margin: 0; 
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;  // Fondo negro para toda la barra.
+}
+
+.nav {
+  width: 100%;
+  margin: 0;
+}
+
+.nav li a {
+  background-color: #000; 
+}
+
+ul, ol {
+  list-style:none;
+}
+
+.nav > li {
+  float:left;
+}
+
+.nav li a {
+  background-color:#000;
+  color:#fff;
+  text-decoration:none;
+  padding:10px 12px;
+  display:block;
+}
+
+.nav li a:hover {
+  background-color:#434343;
+}
+
+.nav li ul {
+  display:none;
+  position:absolute;
+  min-width:140px;
+}
+
+.nav li:hover > ul {
+  display:block;
+}
+
+.nav li ul li {
+  position:relative;
+}
+
+.nav li ul li ul {
+  right:-140px;
+  top:0px;
+}
+
+.styled-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+.stars {
+    display: inline-block;
+}
+        
+.stars::before {
+  content: "\2605\2605\2605\2605\2605\2605\2605\2605\2605\2605";
+  letter-spacing: 2px;
+  font-size: 16px;
+  color: #FFD700;  /* Color dorado para las estrellas */
+        }
+        .skills-list {
+          font-size: 1.5em;
+          margin-bottom: 30px;
+      }
+      
+      .skills-list li {
+          margin-top: 20px;
+      }
+      
+      .stars {
+          display: inline-block;
+          margin-left: 15px;
+          font-size: 24px;
+          color: #FFD700;
+      }
+      
+      .three-stars::before {
+          content: "\2605\2605\2605";
+      }
+      
+      .six-stars::before {
+          content: "\2605\2605\2605\2605\2605\2605";
+      }
+      
+      .seven-stars::before {
+          content: "\2605\2605\2605\2605\2605\2605\2605";
+      }
+      
+      .eight-stars::before {
+          content: "\2605\2605\2605\2605\2605\2605\2605\2605";
+      }
+      
+      .nine-stars::before {
+          content: "\2605\2605\2605\2605\2605\2605\2605\2605\2605";
+      }
+      
+      #index {
+          font-size: 1.5em;
+          margin-bottom: 40px;
+      }
+      
+      #index ol {
+          padding-left: 20px;
+      }
+      
+      #index a {
+          text-decoration: none;
+          color: #333;
+      }
+      
+      #index a:hover {
+          text-decoration: underline;
+      }
+      .skill-title {
+        font-size: 2em;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #555;
+        position: relative;
+    }
+    
+    .skill-title::after {
+        content: '';
+        width: 100px;
+        height: 3px;
+        background-color: #FFD700;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .nav li ul {
+      display:none;
+      position:absolute;
+      min-width:140px;
+      z-index: 1000; /* añade esto */
+    }

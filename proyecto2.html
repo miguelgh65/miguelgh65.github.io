@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <div id="language-switcher">
+        <a href="proyecto2.html"><span class="flag-icon flag-icon-es"></span> SP</a> | 
+        <a href="eproyecto2.html"><span class="flag-icon flag-icon-gb"></span> EN</a>
+    </div>
+    
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div id="clock"></div>
+
+    <div id="header">
+        <nav> <!-- Envuelto en una etiqueta nav para centrarlo -->
+            <ul class="nav">
+                <li><a href="index.html">Sobre mí</a></li>
+                <li><a href="#">Estudios</a>
+                    <ul>
+                        <li><a href="https://www.etsit.upm.es/estudios/grado-en-ingenieria-de-tecnologias-y-servicios-de-telecomunicacion.html">Ingeniería de Tecnologías y Servicios de Telecomunicación ETSIT UPM</a></li>
+                        <li><a href="https://www.etsit.upm.es/estudios/master-universitario-en-ingenieria-de-telecomunicacion.html">Máster universitario Ingenieria de Telecomunicación UPM</a></li>
+                        <li><a href="https://www.polimi.it/en/international-prospective-students/laurea-magistrale-programmes-equivalent-to-master-of-science/programme-catalogue/computer-science-and-engineering">Master en Computer Science Politecnico de Milano (POLIMI), Erasmus</a></li>
+                        <li><a href="https://asociacionaepi.es/curso-profesional-de-python/">Curso Profesional de Python Asociación Española Programadores Informáticos</a></li>
+                        <li><a href="https://www.nvidia.com/en-us/training/">Fundamentals of Deep Learning,Nvidia Deep Learning Institute</a></li>
+
+                    </ul>
+                <li><a href="#">Experiencia laboral</a>
+                    <ul>
+
+                        <li><a href="experiencialaboral.html">Sortis, proyecto St Engineering Idirect</a></li>
+                    </ul></li> 
+
+    
+                <li><a href="#">Proyectos realizados</a>
+
+                    <ul>
+                        <li><a href="proyecto1.html">Proyecto de fin de Máster: Imitación de Voz con Deep Learning para Alexa</a></li>
+                        <li><a href="proyecto2.html">Proyecto fin de Grado: Detección de Personas con Cámara Térmica</a></li>
+                        <li><a href="proyecto3.html">Predicción del Precio de Casas</a></li>
+                        <li><a href="proyecto4.html">Proyectos en Politecnico di Milano (Polimi)</a></li>
+                        <li><a href="proyecto5.html">Proyecto desarrollado para ST Engineering Idirect</a></li>
+                        <li><a href="proyecto6.html">Automated Weekly Service Report</a></li>
+                        <li><a href="proyecto7.html">Integración de Tacotron 2 y GPT-3 para UPM</a></li>
+                        
+
+                    </ul>
+                </li>
+                <li><a href="tecnologiasconocidas.html">Tecnlogías Conocidas</a></li> 
+
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <section id="mastersThesis">
+        <div id="main-content">
+            <h2>Master's Thesis: Deep Learning Voice Mimic for Alexa</h2>
+    
+            <p>
+                El foco principal de este proyecto fue el desarrollo de un sistema de monitorización de temperaturas corporales. Este sistema está diseñado para detectar estados febriles y ayudar en la prevención de la transmisión de enfermedades en zonas concurridas mediante el análisis de imágenes obtenidas de cámaras térmicas.
+            </p>
+            
+            <p>
+                En el corazón de este sistema se emplearon redes neuronales convolucionales avanzadas. Se exploraron y probaron diversas arquitecturas, incluyendo YOLO y RCNN. Además, se hizo uso de la red Detectron 2, desarrollada por Facebook, para la detección y el tracking de las personas en un vídeo, ya sea en el espectro infrarrojo o en el espectro visible.
+            </p>
+    
+            <p>
+                Una vez realizada la detección y el tracking, el sistema selecciona un punto específico de la cabeza, generalmente el punto más caliente, y compara este dato con una escala preestablecida que relaciona el color de la imagen con la temperatura correspondiente. Este método permite determinar la temperatura de la persona en la imagen con una alta precisión. Si se detecta que una persona presenta una temperatura elevada, indicativo de un estado febril, el sistema genera una alerta y notifica al operador o a la persona encargada de supervisar el programa.
+            </p>
+            <img src="temperatura.png" alt="Imagen de una cámara térmica detectando temperatura" width="400" class="styled-img">
+
+    
+            <div id="document-links">
+                <a href="https://drive.google.com/file/d/16p1blnM2FAXkAUBfDJKFnbxzLdF1ZN6n/view?usp=drive_link" target="_blank">
+                    <i class="fas fa-file-pdf" style="color: red; font-size: 24px;"></i>
+                    Ver Documento PDF, Memoria del trabajo
+                </a>
+                <br>
+                <a href="https://docs.google.com/presentation/d/1Zd70X97cTspH8xFA6dHsEfNpMpCiWCm1/edit?usp=drive_link&ouid=102238128205785207394&rtpof=true&sd=true"target="_blank">   
+                
+                    <i class="fas fa-file-powerpoint" style="color: orange; font-size: 24px;"></i>
+                    Ver Presentación PowerPoint del trabajo
+                </a>
+            </div>
+    
+        </div>
+    </section>
+    <section id="github-link">
+        <div id="main-content" style="text-align: center;">
+            <a href="https://github.com/miguelgh65/TFG-Creacion-de-un-programa-para-detectar-estados-febriles-con-IA" target="_blank">
+                <i class="fab fa-github fa-3x" style="vertical-align: middle; margin-right: 10px;"></i>
+                Aquí puedes ver el código fuente del proyecto
+            </a>
+        </div>
+    </section>
+        
+    
+
+    
+</body>
+
+</html>

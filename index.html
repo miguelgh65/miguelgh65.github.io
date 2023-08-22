@@ -1,66 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miguel González Hernández - Portfolio</title>
+    <title>Miguel's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <div id="language-switcher">
+        <a href="index.html"><span class="flag-icon flag-icon-es"></span> SP</a> | 
+        <a href="eindex.html"><span class="flag-icon flag-icon-gb"></span> EN</a>
+    </div>
+    
 </head>
+
 <body>
-    <div id="clock" style="position:absolute; top:10px; right:10px;"></div>
+    <script src="script.js"></script>
+    <div id="clock"></div>
 
-    <header>
-        <h1>Miguel González Hernández</h1>
-        <p>Telecommunications Engineer & Consultant for Sortis</p>
-    </header>
+    <div id="header">
+        <nav> <!-- Envuelto en una etiqueta nav para centrarlo -->
+            <ul class="nav">
+                <li><a href="index.html">Sobre mí</a></li>
+                <li><a href="#">Estudios</a>
+                    <ul>
+                        <li><a href="https://www.etsit.upm.es/estudios/grado-en-ingenieria-de-tecnologias-y-servicios-de-telecomunicacion.html">Ingeniería de Tecnologías y Servicios de Telecomunicación ETSIT UPM</a></li>
+                        <li><a href="https://www.etsit.upm.es/estudios/master-universitario-en-ingenieria-de-telecomunicacion.html">Máster universitario Ingenieria de Telecomunicación UPM</a></li>
+                        <li><a href="https://www.polimi.it/en/international-prospective-students/laurea-magistrale-programmes-equivalent-to-master-of-science/programme-catalogue/computer-science-and-engineering">Master en Computer Science Politecnico de Milano (POLIMI), Erasmus</a></li>
+                        <li><a href="https://asociacionaepi.es/curso-profesional-de-python/">Curso Profesional de Python Asociación Española Programadores Informáticos</a></li>
+                        <li><a href="https://www.nvidia.com/en-us/training/">Fundamentals of Deep Learning,Nvidia Deep Learning Institute</a></li>
 
-    <main id="main-content">
-        <section id="about-me">
-            <h2>About Me</h2>
+                    </ul>
+                <li><a href="#">Experiencia laboral</a>
+                    <ul>
+
+                        <li><a href="experiencialaboral.html">Sortis, proyecto St Engineering Idirect</a></li>
+                    </ul></li> 
+
+    
+                <li><a href="#">Proyectos realizados</a>
+
+                    <ul>
+                        <li><a href="proyecto1.html">Proyecto de fin de Máster: Imitación de Voz con Deep Learning para Alexa</a></li>
+                        <li><a href="proyecto2.html">Proyecto fin de Grado: Detección de Personas con Cámara Térmica</a></li>
+                        <li><a href="proyecto3.html">Predicción del Precio de Casas</a></li>
+                        <li><a href="proyecto4.html">Proyectos en Politecnico di Milano (Polimi)</a></li>
+                        <li><a href="proyecto5.html">Proyecto desarrollado para ST Engineering Idirect</a></li>
+                        <li><a href="proyecto6.html">Automated Weekly Service Report</a></li>
+                        <li><a href="proyecto7.html">Integración de Tacotron 2 y GPT-3 para UPM</a></li>
+                        
+
+                    </ul>
+                </li>
+                <li><a href="tecnologiasconocidas.html">Tecnlogías Conocidas</a></li> 
+
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="aboutMe">
+        <div id="main-content">
+            <img src="miguel.png" alt="Foto de Miguel" style="width: 30%; display: block; margin: 0 auto; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);">
             <p>
-                I currently work on an international project for ST Engineering Idirect in the role of Application Engineer. My responsibilities revolve around support for satellite networks, spanning from the installation of hubs on the Dialog platform to Python scripting development. My true passion lies in data science and data analytics, leading me to adopt roles focused on these areas. I've developed algorithms to enhance team efficiency, conducted analytics using Salesforce API, and ventured into artificial intelligence, specifically linear regression algorithms like Lasso and Ridge, and deep learning for time series prediction.
+                Actualmente trabajo en un proyecto internacional para ST Engineering Idirect en el papel de Ingeniero de Aplicaciones. Mis responsabilidades giran en torno al soporte para redes vía satélite, que abarcan desde la instalación de hubs en la plataforma Dialog hasta el desarrollo de scripts en Python. Aunque mi verdadera pasión reside en la ciencia de datos y análisis de datos. Esta inclinación me ha llevado a adoptar roles centrados en estas áreas. He desarrollado algoritmos para potenciar la eficiencia del equipo, realizado análisis utilizando la API de Salesforce y me he adentrado en la inteligencia artificial, específicamente en algoritmos de regresión lineal como Lasso y Ridge, así como en aprendizaje profundo para la predicción de series temporales.
             </p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-
-        <div class="project">
-            <h3>Master's Thesis: Deep Learning Voice Mimic for Alexa</h3>
-            <p>A program developed with deep learning that empowers Alexa to mimic voices.</p>
-        </div>
-
-        <div class="project">
-            <h3>Bachelor's Project: Thermal Camera Person Detection</h3>
-            <p>An application that uses neural networks to detect individuals through a thermal camera and measures their temperature, triggering an alarm in febrile cases.</p>
-        </div>
-
-        <div class="project">
-            <h3>House Price Prediction</h3>
-            <p>Using the Idealista API, I developed a model that predicts house prices based on regressions and deep learning models, factoring in location and features.</p>
-        </div>
-
-        <div class="project">
-            <h3>Polimio Projects</h3>
-            <p>Classification of plant leaves with convolutional networks and time series prediction using transformers.</p>
-        </div>
-
-        <div class="project">
-            <h3>Confidential Project: ST Engineering Idirect</h3>
-            <p>Worked with Salesforce metrics and predicted data demand in a CS department using time series prediction models based on transformers.</p>
-        </div>
-
-        <div class="project">
-            <h3>Automated Weekly Service Report</h3>
-            <p>Utilized Pandas and Salesforce to automate the creation of a weekly service report based on hours dedicated to a Salesforce case.</p>
-        </div>
-
-        <div class="project">
-            <h3>Integration of Tacotron 2 and GPT-3</h3>
-            <p>Developed a paper analyzing the Tacotron 2 neural network and integrated it with GPT-3 to design a speaking machine.</p>
-        </div>
-
+            <p>
+                Fuera del ámbito profesional, soy un entusiasta del tenis y he dedicado incontables horas a perfeccionar mi revés y saque. Creo que la disciplina y el pensamiento estratégico requeridos en el tenis reflejan de cerca mi enfoque hacia la resolución de problemas en el mundo tecnológico. Durante los fines de semana, a menudo me encuentras explorando senderos locales para caminatas. Al igual que cualquier ingeniero de telecomunicaciones, me encanta la tecnología, especialmente si es antigua, vintage o si acaba de salir al mercado.
+            </p>
+      
+    
+        <div id="document-links">
+            <i class="fas fa-file-pdf" style="color: red; font-size: 24px;"></i>
+            <a href="            https://drive.google.com/file/d/1YhbSbGhc_c69AgK1s8hXfEkYNF69ala2/view?usp=drive_link" target="_blank">
+            Por favor, no dude en descargar mi CV, gracias
+    </a>
+</div>
     </section>
 </body>
+
 </html>

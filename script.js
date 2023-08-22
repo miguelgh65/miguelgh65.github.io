@@ -1,18 +1,12 @@
-function updateTime() {
-  var dateInfo = new Date();
+// Función para actualizar el reloj
+function updateClock() {
+  const now = new Date();
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const seconds = String(now.getSeconds()).padStart(2, '0');
+  document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+}
 
-  // time
-  var hr = dateInfo.getHours(),
-    _min = (dateInfo.getMinutes() < 10) ? "0" + dateInfo.getMinutes() : dateInfo.getMinutes(),
-    sec = (dateInfo.getSeconds() < 10) ? "0" + dateInfo.getSeconds() : dateInfo.getSeconds(),
-    ampm = (dateInfo.getHours() >= 12) ? "PM" : "AM";
-
-  // replace 0 with 12 at midnight, subtract 12 from hour if 13-23
-  if (hr == 0) {
-    hr = 12;
-  } else if (hr > 12) {
-    hr = hr - 12;
-  }
-
-  var currentTime = hr + ":" + _min + ":" + sec;
-
+// Actualizar el reloj cada segundo
+setInterval(updateClock, 1000);
+updateClock();

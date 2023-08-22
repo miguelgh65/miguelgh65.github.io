@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <div id="language-switcher">
+        <a href="proyecto3.html"><span class="flag-icon flag-icon-es"></span> SP</a> | 
+        <a href="eproyecto3.html"><span class="flag-icon flag-icon-gb"></span> EN</a>
+    </div>
+    
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div id="clock"></div>
+
+    <div id="header">
+        <nav> <!-- Envuelto en una etiqueta nav para centrarlo -->
+            <ul class="nav">
+                <li><a href="index.html">Sobre mí</a></li>
+                <li><a href="#">Estudios</a>
+                    <ul>
+                        <li><a href="https://www.etsit.upm.es/estudios/grado-en-ingenieria-de-tecnologias-y-servicios-de-telecomunicacion.html">Ingeniería de Tecnologías y Servicios de Telecomunicación ETSIT UPM</a></li>
+                        <li><a href="https://www.etsit.upm.es/estudios/master-universitario-en-ingenieria-de-telecomunicacion.html">Máster universitario Ingenieria de Telecomunicación UPM</a></li>
+                        <li><a href="https://www.polimi.it/en/international-prospective-students/laurea-magistrale-programmes-equivalent-to-master-of-science/programme-catalogue/computer-science-and-engineering">Master en Computer Science Politecnico de Milano (POLIMI), Erasmus</a></li>
+                        <li><a href="https://asociacionaepi.es/curso-profesional-de-python/">Curso Profesional de Python Asociación Española Programadores Informáticos</a></li>
+                        <li><a href="https://www.nvidia.com/en-us/training/">Fundamentals of Deep Learning,Nvidia Deep Learning Institute</a></li>
+
+                    </ul>
+                <li><a href="#">Experiencia laboral</a>
+                    <ul>
+
+                        <li><a href="experiencialaboral.html">Sortis, proyecto St Engineering Idirect</a></li>
+                    </ul></li> 
+
+    
+                <li><a href="#">Proyectos realizados</a>
+
+                    <ul>
+                        <li><a href="proyecto1.html">Proyecto de fin de Máster: Imitación de Voz con Deep Learning para Alexa</a></li>
+                        <li><a href="proyecto2.html">Proyecto fin de Grado: Detección de Personas con Cámara Térmica</a></li>
+                        <li><a href="proyecto3.html">Predicción del Precio de Casas</a></li>
+                        <li><a href="proyecto4.html">Proyectos en Politecnico di Milano (Polimi)</a></li>
+                        <li><a href="proyecto5.html">Proyecto desarrollado para ST Engineering Idirect</a></li>
+                        <li><a href="proyecto6.html">Automated Weekly Service Report</a></li>
+                        <li><a href="proyecto7.html">Integración de Tacotron 2 y GPT-3 para UPM</a></li>
+                        
+
+                    </ul>
+                </li>
+                <li><a href="tecnologiasconocidas.html">Tecnlogías Conocidas</a></li> 
+
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    
+    
+    <section id="workExperience">
+        <div id="main-content">
+            <h2>Predictor de Precios Inmobiliarios</h2>
+            <p>
+                Actualmente, estamos trabajando en un modelo de inteligencia artificial diseñado para predecir precios inmobiliarios utilizando datos reales. Haciendo uso de la API de Idealista, hemos obtenido una extensa cantidad de información relacionada con los precios de las casas, anuncios de viviendas, ubicaciones y demás características relevantes.
+            </p>
+    
+            <img src="series.png" alt="Análisis de Datos Inmobiliarios" width="400" class="styled-img">
+    
+            <p>
+                Tras un análisis exhaustivo, observamos correlaciones entre variables como tamaño, ubicación y precio de las viviendas. Una vez identificadas estas correlaciones, hemos procedido a realizar regresiones para estimar el precio de las casas. Estas regresiones se llevan a cabo mediante métodos clásicos y técnicas de deep learning.
+            </p>
+    
+            <p>
+                Además de predecir el precio, hemos desarrollado un clasificador basado en imágenes que determina el tipo de vivienda. Por ejemplo, a partir de las fotografías de un inmueble, nuestro modelo puede distinguir si se trata de un piso, un dúplex, un chalet, entre otros.
+            </p>
+    
+            <p>
+                En resumen, nuestra herramienta no sólo estima el valor de una propiedad, sino que también categoriza su tipo con base en sus imágenes. Estos avances ofrecen una ventaja significativa para profesionales del sector inmobiliario, brindándoles herramientas precisas para mejorar su toma de decisiones y proporcionar una mejor experiencia a sus clientes.
+            </p>
+        
+   
+        <div id="document-links">
+            <a href="https://drive.google.com/file/d/1WKYDeunHiM8oJMcRE7gvGxK8irE-6uuk/view?usp=drive_link" target="_blank">
+                <i class="fas fa-file-pdf" style="color: red; font-size: 24px;"></i>
+            Ver Documento PDF, Memoria del trabajo
+        </a>
+    </div>
+
+</div>
+</section>
+<section id="github-link">
+<div id="main-content" style="text-align: center;">
+    <a href="https://github.com/miguelgh65/PRDL--Idealista--House-Price-predicition" target="_blank">
+        <i class="fab fa-github fa-3x" style="vertical-align: middle; margin-right: 10px;"></i>
+        Aquí puedes ver el código fuente del proyecto
+    </a>
+</div>
+
+    
+</body>
+
+</html>

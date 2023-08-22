@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <div id="language-switcher">
+        <a href="proyecto6.html"><span class="flag-icon flag-icon-es"></span> SP</a> | 
+        <a href="eproyecto6.html"><span class="flag-icon flag-icon-gb"></span> EN</a>
+    </div>
+    
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div id="clock"></div>
+
+    <div id="header">
+        <nav> <!-- Envuelto en una etiqueta nav para centrarlo -->
+            <ul class="nav">
+                <li><a href="index.html">Sobre mí</a></li>
+                <li><a href="#">Estudios</a>
+                    <ul>
+                        <li><a href="https://www.etsit.upm.es/estudios/grado-en-ingenieria-de-tecnologias-y-servicios-de-telecomunicacion.html">Ingeniería de Tecnologías y Servicios de Telecomunicación ETSIT UPM</a></li>
+                        <li><a href="https://www.etsit.upm.es/estudios/master-universitario-en-ingenieria-de-telecomunicacion.html">Máster universitario Ingenieria de Telecomunicación UPM</a></li>
+                        <li><a href="https://www.polimi.it/en/international-prospective-students/laurea-magistrale-programmes-equivalent-to-master-of-science/programme-catalogue/computer-science-and-engineering">Master en Computer Science Politecnico de Milano (POLIMI), Erasmus</a></li>
+                        <li><a href="https://asociacionaepi.es/curso-profesional-de-python/">Curso Profesional de Python Asociación Española Programadores Informáticos</a></li>
+                        <li><a href="https://www.nvidia.com/en-us/training/">Fundamentals of Deep Learning,Nvidia Deep Learning Institute</a></li>
+
+                    </ul>
+                <li><a href="#">Experiencia laboral</a>
+                    <ul>
+
+                        <li><a href="experiencialaboral.html">Sortis, proyecto St Engineering Idirect</a></li>
+                    </ul></li> 
+
+    
+                <li><a href="#">Proyectos realizados</a>
+
+                    <ul>
+                        <li><a href="proyecto1.html">Proyecto de fin de Máster: Imitación de Voz con Deep Learning para Alexa</a></li>
+                        <li><a href="proyecto2.html">Proyecto fin de Grado: Detección de Personas con Cámara Térmica</a></li>
+                        <li><a href="proyecto3.html">Predicción del Precio de Casas</a></li>
+                        <li><a href="proyecto4.html">Proyectos en Politecnico di Milano (Polimi)</a></li>
+                        <li><a href="proyecto5.html">Proyecto desarrollado para ST Engineering Idirect</a></li>
+                        <li><a href="proyecto6.html">Automated Weekly Service Report</a></li>
+                        <li><a href="proyecto7.html">Integración de Tacotron 2 y GPT-3 para UPM</a></li>
+                        
+
+                    </ul>
+                </li>
+                <li><a href="tecnologiasconocidas.html">Tecnlogías Conocidas</a></li> 
+
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <section id="workExperience">
+        <div id="main-content">
+            <h2>Weekly Serice Report autoamtizado</h2>
+            <p>
+                Durante años, el proceso de reportar las horas dedicadas a cada cliente se llevó a cabo manualmente mediante hojas Excel. Esta tarea, aunque rutinaria, consumía una cantidad significativa de tiempo y presentaba un margen de error debido a la naturaleza manual del proceso.
+            </p>
+            <img src="excel.png" alt="Predicción de Series Temporales" width="150" class="styled-img">
+
+            <p>
+                Para mejorar y optimizar este proceso, decidí automatizar la generación de estos informes. Utilizando las métricas proporcionadas por Salesforce, desarrollé un sistema que asigna automáticamente las horas dedicadas a cada cliente. Aunque esto podría sonar sencillo, la tarea no fue directa. Salesforce proporciona datos basados en el tiempo por caso y no por cliente, lo que añadía una capa adicional de complejidad al desafío.
+            </p>
+            <p>
+                Para superar esta dificultad, fue necesario diseñar y desarrollar un código robusto que realizara un uso intensivo de la biblioteca <em>Pandas</em> de Python. Esta herramienta fue fundamental para manipular, transformar y analizar los datos, permitiendo así la asignación correcta de horas por cliente. Este proceso no solo ha optimizado una tarea esencial sino que también ha reducido el margen de error, proporcionando informes más precisos y liberando tiempo valioso que puede ser empleado en otras tareas críticas.
+            </p>
+        </div>
+    </section>
+    
+
+    
+</body>
+
+</html>
